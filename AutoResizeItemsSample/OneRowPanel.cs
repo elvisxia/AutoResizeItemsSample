@@ -15,8 +15,6 @@ namespace AutoResizeItemsSample
         double itemHeight=0;
         protected override Size MeasureOverride(Size availableSize)
         {
-            CoreApplication.Properties["GridViewSize"] = availableSize;
-            
             int count = Children.Count;
             foreach (FrameworkElement child in Children)
             {
